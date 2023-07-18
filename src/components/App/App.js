@@ -5,12 +5,14 @@ import {
   Switch,
 } from 'react-router-dom';
 import './App.css';
+import Navbar from '../Navbar/Navbar';
 import HomePage from '../HomePage/HomePage'
 import PortfolioPage from '../PortfolioPage/PortfolioPage'
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <switch>
         <Route exact path="/">
           <HomePage />
